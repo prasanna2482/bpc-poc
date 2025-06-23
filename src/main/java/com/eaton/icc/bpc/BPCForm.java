@@ -30,8 +30,8 @@ public class BPCForm extends HttpServlet
    public void init(ServletConfig config) throws ServletException {
     super.init(config);
 	   // Dummy secrets for testing GitHub secret scanning
-          String githubToken = "ghp_examplepersonalaccesstoken123456";
-          String awsSecretKey = "AKIAIOSFODNN7EXAMPLE";
+          String githubToken = "ghp_RANDOMCHARACTERS1234567890123456789012345678";
+          String awsSecretKey = "AKIAABCDEFGHIJKLMNOPQ";
           String slackWebhook = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX";
     try {
         // Load init.sql from classpath (src/main/resources/sql/init.sql)
