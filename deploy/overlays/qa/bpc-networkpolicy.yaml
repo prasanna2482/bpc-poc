@@ -1,0 +1,17 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: email-egress-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: bpc
+  egress:
+    - ports:
+        - protocol: TCP
+          port: 25
+      to:
+        - ipBlock:
+            cidr: 151.110.126.205/32
+  policyTypes:
+    - Egress

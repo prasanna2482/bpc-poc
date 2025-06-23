@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- ../../base
+- bpc-networkpolicy.yaml
+images:
+- name: ghcr.io/etn-corp/bpc
+  newName: devsecopspoccontainerregistry.azurecr.io/poc
+  newTag: poc

@@ -1,0 +1,9 @@
+kind: PodDisruptionBudget
+apiVersion: policy/v1
+metadata:
+  name: bpc-pdb
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      deployment: bpc

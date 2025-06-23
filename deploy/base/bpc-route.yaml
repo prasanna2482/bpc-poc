@@ -1,0 +1,16 @@
+﻿kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: bpc
+  labels:
+    app: bpc
+spec:
+  path: /
+  to:
+    kind: Service
+    name: bpc
+  port:
+    targetPort: 8080-tcp
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

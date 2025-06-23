@@ -1,0 +1,218 @@
+<STYLE TYPE="text/css">
+<!--/* Compatible with IE and NS versions 4 and later *//* "hover" pseudo-class is CSS2 and not compatible with NS4.x *//* Developed according to W3C CSS1 and CSS2 specifications *//* Version 2.1                             *//* Originally Created: April 3, 2002       *//* Last modified: April 3, 2003            *//* By: Nate Butler, Cutler-Hammer Web Team *//*This style sheet contains common elements that are used throughout many ofour Web sites and Web-based applications in accordance with standards. It isadvisable to eliminate styles from this sheet that you will not use. */
+body {
+background-color: #FFFFFF;
+}
+p {
+	color: #000000;
+	font-family: Arial, serif, sans-serif, monospace;
+	font-size: 12px;      /* 12px is standard body text size */      /* heading text sizes are 21, 17, and 13 pixels - see heading classes below */
+	font-weight: normal;      /* can also be bold */
+	font-style: normal;      /* can also be italic */
+	text-decoration: none;      /* can also be underline or line-through */
+}
+td {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+ul {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+input.text { /*width: 300px;  */
+	background-color: #D4D0C8;
+}
+.crumbarrow {
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+.crumbcurrent {
+	color: #FF3300;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}/* There are three standard "heading" classes used in our sites and applications.Make sure you have applied the same color to each; they must be consistent. */
+.heading1 {
+	color: #0067CD;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 21px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+.heading2 {
+	color: #0067CD;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 17px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+.heading3 {
+	color: #0067CD;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}/* The "textgray" class is commonly used in extended descriptions of form fields.The gray color allows it to be read clearly, but the user understands that it is notrequired reading. */
+.textgray {
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}/* The "textnormal" class should match the "p" generic class defined above.This class is used in an instance where the default "p" class is not appearing correctly. */
+.textnormal {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}/* The "textredbold" class is used for special emphasis cases, and is often associatedwith required fields in forms. This should be used sparingly. */
+.textredbold {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}/*The "textwhitebold" class is commonly used for table headings in which the white textis imposed on a table cell color, usually a medium to dark shade, enabling it to stand out well. */
+.textwhitebold {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+.tocactive {
+	color: #FF3300;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+.tocsubactive {
+	color: #FF3300;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}/* -------------------------------------------------------------------------------------------------*//* normal anchor tags */
+a:link {
+	color: #0000ff;
+	font-family: Arial, serif, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+a:visited {
+	color: #0000ff;
+	font-family: Arial, serif, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+a:hover {
+	color: #C2AF7D;
+	font-family: Arial, serif, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: underline;
+}
+a:active {
+	color: #C2AF7D;
+	font-family: Arial, serif, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: underline;
+}/* anchor tags for "crumb" class (breadcrumb trail) */
+a.crumb:link {
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+a.crumb:visited {
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+a.crumb:hover {
+	color: #FF3300;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: underline;
+}
+a.crumb:active {
+	color: #FF3300;
+	font-family: Verdana, Arial, Helvetica, sans-serif, monospace;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: underline;
+}/* anchor tags for "toclink" class (table of contents, left column) */
+a.toclink:link {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+a.toclink:visited {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+a.toclink:hover {
+	color: #FF8080;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: underline;
+}
+a.toclink:active {
+	color: #FF8080;
+	font-family: Arial, Helvetica, sans-serif, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: underline;
+}/* All anchor tag style modifiers must appear in link-visited-hover-active order to cascade correctly within the browser. *//* The correct format for anchor tags with classes is a.classname:link and so on (i.e.: a.speciallink:hover) */
+-->
+</STYLE>

@@ -1,0 +1,8 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: bpc
+  labels:
+    app: bpc
+spec:
+  replicas: 2
