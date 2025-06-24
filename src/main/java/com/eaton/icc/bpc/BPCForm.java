@@ -33,14 +33,7 @@ public class BPCForm extends HttpServlet
           String githubToken = "ghp_RANDOMCHARACTERS1234567890123456789012345678";
           String awsSecretKey = "AKIAABCDEFGHIJKLMNOPQ";
           String slackWebhook = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX";
-    try {
-        // Load init.sql from classpath (src/main/resources/sql/init.sql)
-        InputStream in = getClass().getClassLoader().getResourceAsStream("sql/init.sql");
-        if (in == null) {
-            log("init.sql not found in classpath under sql/init.sql");
-            return;
-        }
-
+   
         Scanner s = new Scanner(in).useDelimiter(";");
         Class.forName("com.mysql.cj.jdbc.Driver");
 
