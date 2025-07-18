@@ -1,0 +1,137 @@
+{
+  "_id": "6879d140ffb9ba9ffd7205bc",
+  "name": "Git Custodian API Testing",
+  "description": "Create a new template from scratch.",
+  "owner": "5f75953446564c10379902bb",
+  "roles": [
+    {
+      "role": "administrator",
+      "user": "qaprod@protonmail.com",
+      "group": null
+    }
+  ],
+  "tags": [],
+  "type": [
+    "sdlc"
+  ],
+  "organizationName": "protonmail.com",
+  "account": "org109-acc",
+  "project": {
+    "name": "",
+    "project_id": ""
+  },
+  "workflow": {
+    "source": {
+      "name": "",
+      "service": "github",
+      "accountId": "6705127d20f7260012756922",
+      "workspace": "",
+      "workspaceName": "",
+      "repository": "bpc-poc",
+      "repoId": "prasanna2482/bpc-poc",
+      "projectId": "prasanna2482/bpc-poc",
+      "gitUrl": "https://github.com/prasanna2482/bpc-poc",
+      "sshUrl": "git@github.com:prasanna2482/bpc-poc.git",
+      "branch": "main",
+      "secondary_branches": [],
+      "key": "",
+      "trigger_active": false,
+      "isPushEvent": true,
+      "isPrEvent": false,
+      "isMonitored": false,
+      "sendStepUpdates": false,
+      "prCreatedEvent": true,
+      "prApprovedEvent": false,
+      "gitExportEnabled": true,
+      "gitExportPath": "pipeconfig",
+      "dynamicSettings": false,
+      "allowDynamicSettingsInUi": true,
+      "allowPipelineParametersInUi": true,
+      "allowDynamicSettingsInSalesforceUi": false,
+      "enableBranchSwitch": false,
+      "opseraEdgeToolId": "",
+      "useOpseraEdgeProxy": false,
+      "baselineFromSuccessfulRun": false,
+      "branch_pattern": ""
+    },
+    "plan": [
+      {
+        "name": "Git Custodian API",
+        "description": "",
+        "tool": {
+          "tool_identifier": "gitscraper",
+          "configuration": {
+            "gitFilePath": "",
+            "repository": "bpc-poc",
+            "gitBranch": "main",
+            "gitToolId": "6705127d20f7260012756922",
+            "repoId": "prasanna2482/bpc-poc",
+            "sshUrl": "git@github.com:prasanna2482/bpc-poc.git",
+            "gitUrl": "https://github.com/prasanna2482/bpc-poc",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "type": "git_custodian",
+            "commits": "",
+            "threshold": 6,
+            "excludeSecrets": [
+              {
+                "parameterId": "6879f2ebc9994bb429573f05",
+                "parameterName": "opsera-secretsex"
+              }
+            ],
+            "excludeFiles": [],
+            "secretsException": true,
+            "filesException": false,
+            "service": "github",
+            "scanEmail": false,
+            "excludeDomains": [],
+            "customEntropy": true,
+            "entropy": 3.5,
+            "workspace": "",
+            "projectId": "prasanna2482/bpc-poc",
+            "gitCommitId": "dd0b38d4459ed809705e807976e51a6476acd3f1"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "code-scan"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [],
+        "active": true,
+        "updatedAt": "2020-05-22T12:42:54.717Z",
+        "_id": "5ec7c8cedc73d971e2860b68",
+        "dependencies": []
+      }
+    ],
+    "schedule": {
+      "start_date": null,
+      "end_date": null,
+      "frequency": ""
+    },
+    "last_step": {
+      "status": "stopped",
+      "check_count": 1,
+      "step_id": ""
+    },
+    "run_count": 7,
+    "last_run": {
+      "status": "success",
+      "completed": "2025-07-18T11:09:49.692Z",
+      "run_count": 7
+    }
+  },
+  "active": true,
+  "template": "5ec7c8cedc73d9532e860b67",
+  "templateIdentifier": "blank_pipeline_template",
+  "createdAt": "2025-07-18T04:44:48.871Z",
+  "updatedAt": "2025-07-18T11:27:59.389Z",
+  "__v": 0,
+  "owner_name": "QA User-Production"
+}
